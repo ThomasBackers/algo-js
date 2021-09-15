@@ -1,5 +1,5 @@
 const readlineSync = require("readline-sync");
-console.log("/!\\ WARNING: Separate all the infos by a white space");
+console.log("/!\\ WARNING: Separate all the inputs by a white space");
 let userInput = readlineSync.question(
     "Can you give me your first name, your name & your city please? "
 );
