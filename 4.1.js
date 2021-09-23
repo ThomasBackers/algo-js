@@ -1,6 +1,6 @@
 const readlineSync = require("readline-sync");
 const calcSurface = (length, width) => {
-    //calculates the surface of a rectangle by giving its length & its width
+    /**calculates the surface of a rectangle by giving its length & its width*/
     return length * width;
 };
 console.log("/!\\ WARNING: Separate all the inputs by a white space");
