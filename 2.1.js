@@ -1,5 +1,5 @@
 const readlineSync = require("readline-sync");
-let userAge = new Number(readlineSync.question("Can you give me your age? "));
+let userAge = readlineSync.question("Can you give me your age? ");
 if (userAge > 18) {
     console.log("You are an adult.");
 } else {

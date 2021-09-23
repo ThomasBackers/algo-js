@@ -4,9 +4,9 @@ const userInput = readlineSync.question(
     "Can you give me a minimum value, a maximum value and a current value? "
 );
 const userInputs = userInput.split(" ");
-const minimum = new Number(userInputs[0]),
-    maximum = new Number(userInputs[1]),
-    current = new Number(userInputs[2]);
+const minimum = userInputs[0],
+    maximum = userInputs[1],
+    current = userInputs[2];
 if (minimum > maximum) {
     console.log("ERROR: sorry but your minimum is bigger than your maximum");
 } else {
