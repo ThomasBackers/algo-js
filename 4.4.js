@@ -1,4 +1,5 @@
 const average = arr => {
+    /**returns the average number of a numerical array*/
     let sum = 0;
     for (let elt of arr) {
         sum += elt;
@@ -6,6 +7,7 @@ const average = arr => {
     return sum / arr.length;
 };
 const min = arr => {
+    /**return the minimum of a numerical array*/
     let min = arr[0];
     for (let elt of arr) {
         if (elt < min) {
@@ -15,6 +17,7 @@ const min = arr => {
     return min;
 };
 const max = arr => {
+    /**return the maximum number of a numerical array*/
     let max = arr[0];
     for (let elt of arr) {
         if (elt > max) {
