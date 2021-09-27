@@ -3,10 +3,10 @@ userInput = parseInt(readlineSync.question("How many Fibonacci numbers do you wa
 let a = 0,
     b = 1,
     c;
-if (userInput === 1) {
+if (userInput < 1) {
+} else if (userInput === 1) {
     console.log(a);
-} else if (userInput < 1) {}
-else {
+} else {
     console.log(`${a}\n${b}`);
     for (let i = 0; i < userInput - 2; i++) {
         c = a + b;
