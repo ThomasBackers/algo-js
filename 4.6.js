@@ -12,21 +12,18 @@ const factorial = a => {
     for (let i = 1; i <= a; i++) {
         product *= i;
     }
-    return product
-}
+    return product;
+};
 console.log(factorial(userInput));
 //recursive
 const recursiveFactorial = a => {
     if (a < 0) {
         return "Sorry, but it's a factorial algorithm =/";
     }
-    if (a == 0) {
+    if (a == 0 || a == 1) {
         return 1;
-    }
-    if (a == 1) {
-        return a;
     } else {
-        return a  * recursiveFactorial(a - 1);
+        return a * recursiveFactorial(a - 1);
     }
-}
+};
 console.log(recursiveFactorial(userInput));
